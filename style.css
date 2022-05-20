@@ -5,14 +5,15 @@
     scroll-behavior: smooth; 
   }
   body {
+    max-width: 1040px;
     min-height: 100vh;
-    margin: 0; padding: 0;
+    margin: 0 auto; padding: 0;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: normal;
   }
   .section-item a {
-    color: #829985;
+    color: white;
     text-decoration: none;  
     transition: color 0.5s;
   }
@@ -20,7 +21,7 @@
     color: #4d2323;
   }
 .header {
-    border: 1px solid red;
+  background-color: #3b3b3d;
 }
 .nav-list {
     display: flex;
@@ -33,39 +34,66 @@
     line-height: 10px;
     transition: .3s;
     text-decoration: none;
+    color: white;
   }
 .main {
-    border: 1px solid red;
+  height: 100%;
+  border: 1px solid red;
+  display: flex;
 }
 .footer {
     border: 1px solid red;
 }
-.container {
-    max-width: 1440px;
-    margin: 0 auto;
-  }
-.main-container {
+.aside {
+    width: 40%;
+    height: 100%;
     display: flex;
-    flex-wrap: wrap;
+    justify-content: flex-start;
+    flex-direction: column;
+    background-color: #3b3b3d;
+    padding-left: 40px;
+    padding-right: 10px;
   }
+.column-main {
+  width: 60%;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  color: #3b3b3d;
+  padding-left: 40px;
+  padding-right: 10px;
+}
 .section {
-    width: 50%;
+    width: 100%;
   }
 .section-title {
     font-size: 20px;
     font-weight: 400;
     text-transform: uppercase;
     letter-spacing: 5px;
-    color: #829985;
+    color: white;
+  }
+.section-title-main {
+    font-size: 20px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: #3b3b3d;
   }
   .link {
     text-decoration: none;
-    color: #829985;
+    color: white;
     transition: color 0.5s;
   }
   
   .link:hover {
-    color: #5d7260;
+    color: white;
+  }
+  .text-column {
+    color: white;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
   }
 @media (max-width: 768px) {
     .section {

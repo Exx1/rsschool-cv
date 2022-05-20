@@ -10,45 +10,82 @@
 </head>
 <body>
     <header class="header">
-        <div class="conteiner">
             <nav class="nav">
                 <ul class="nav-list">
-                  <li class="nav-item"><a href="#contacts" class="nav-link">Contacts</a></li>
-                  <li class="nav-item"><a href="#summary" class="nav-link">Summary</a></li>
-                  <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
-                  <li class="nav-item"><a href="#code" class="nav-link">Code</a></li>
-                  <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
-                  <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
-                  <li class="nav-item"><a href="#languages" class="nav-link">Languages</a></li>
+                    <li class="nav-item"><a href="#contacts" class="nav-link">Contacts</a></li>
+                    <li class="nav-item"><a href="#summary" class="nav-link">Summary</a></li>
+                    <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                    <li class="nav-item"><a href="#code" class="nav-link">Code</a></li>
+                    <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+                    <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+                    <li class="nav-item"><a href="#languages" class="nav-link">Languages</a></li>
                 </ul>
-              </nav>
-        </div>
+            </nav>
     </header>
     <main class="main">
-        <div class="conteiner main-container">
-            <section class="section" id="profile">
-                <h1 class="section-title">Name Surname</h1>
-            </section>
+        <aside class="aside">
+            <img src="assets/img/avatar.png" alt="Photo" width="300px">
             <section class="section" id="contacts">
                 <h2 class="section-title">Contacts</h2>
-            </section>            
-            <section class="section" id="summary">
-                <h2 class="section-title">Summary</h2>
+                <ul class="text-column">
+                <li>Tel: +7</li>
+                <li>Email</li>
+                <li>GitHub</li>
+                <li>Telegram</li>
+                </ul>
             </section>
             <section class="section" id="skills">
                 <h2 class="section-title">Skills</h2>
-            </section>
-            <section class="section" id="code">
-                <h2 class="section-title">Code</h2>
-            </section>
-            <section class="section" id="projects">
-                <h2 class="section-title">Projects</h2>
+                <ul class="text-column">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript (Basic)</li>
+                    <li>Git</li>
+                    <li>Adobe Photoshop, illustrator, Premiere Pro</li>
+                </ul>
             </section>
             <section class="section" id="education">
                 <h2 class="section-title">Education</h2>
+                <p class="text-column"><b>University:</b> Plekhanov Russian University of Economics, Marketing in trading activities</p>
             </section>
             <section class="section" id="languages">
                 <h2 class="section-title">Languages</h2>
+                <ul class="text-column">
+                    <li>Russian - Native</li>
+                    <li>English - A2</li>
+                </ul>
+            </section>
+        </aside> 
+        <div class="column-main">
+            <section class="section" id="profile">
+                <h1 class="section-title-main">Name Surname</h1>
+                <p>Junior Front-End Developer</p>
+            </section>           
+            <section class="section" id="summary">
+                <h2 class="section-title-main">Summary</h2>
+                <p>I am 26 years old and now i am working as a marketer in the large company selling trucks. Given recent events, most of the European brands with which our company worked are leaving the Russian market so i am thinking about changing my profession and now is the right time to do it.</p>
+                <p>I like to do computers, learn new technologies related to PC components. I like to spend different tests as with hardware as with programs (Although i can often break something but on the other hand i can understand how it works)</p>
+                <p>Having tried to start learning programming, I began to gradually get involved in this process and with each new lesson the desire does not fade away and I constantly want to learn something and do something in practice, there is no feeling that I am "working" and I like it the most.</p>
+            </section>
+
+            <section class="section" id="code">
+                <h2 class="section-title-main">Code</h2>
+                <pre class="hljs" style="display: block; overflow-x: auto; padding: 0.5em; background: #3b3b3d; color: rgb(221, 221, 221);"><span class="hljs-function"><span class="hljs-keyword" style="color: rgb(255, 255, 255); font-weight: 700;">function</span> <span class="hljs-title" style="color: rgb(221, 136, 136); font-weight: 700;">testCycle</span>(<span class="hljs-params">n</span>) </span>{
+                    <span class="hljs-keyword" style="color: rgb(255, 255, 255); font-weight: 700;">var</span> x=<span class="hljs-string" style="color: rgb(221, 136, 136);">"Prime number"</span>;
+                    <span class="hljs-keyword" style="color: rgb(255, 255, 255); font-weight: 700;">var</span> y=<span class="hljs-built_in" style="color: rgb(221, 136, 136);">Math</span>.sqrt(n);
+                    <span class="hljs-keyword" style="color: rgb(255, 255, 255); font-weight: 700;">var</span> z=<span class="hljs-number">0.0</span>;
+                    <span class="hljs-keyword" style="color: rgb(255, 255, 255); font-weight: 700;">for</span> (i=<span class="hljs-number">2</span>; i&lt;=y; i=i+<span class="hljs-number">1</span>) {
+                        z=n%i;
+                    <span class="hljs-keyword" style="color: rgb(255, 255, 255); font-weight: 700;">if</span> (z==<span class="hljs-number">0</span>) {
+                        x=<span class="hljs-string" style="color: rgb(221, 136, 136);">"Composite number"</span>;
+                        <span class="hljs-keyword" style="color: rgb(255, 255, 255); font-weight: 700;">break</span>;
+                    }
+                    }
+                    <span class="hljs-keyword" style="color: rgb(255, 255, 255); font-weight: 700;">return</span> x;
+                }</pre>
+            </section>
+            <section class="section" id="projects">
+                <h2 class="section-title-main">Projects</h2>
             </section>
         </div>
     </main>
