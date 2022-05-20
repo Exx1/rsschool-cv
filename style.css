@@ -165,6 +165,9 @@ background-color: #dd8888;
     height: auto;
     padding: 0 20px;
 }
+.projects {
+  margin-bottom: 20px;
+}
 @media (max-width: 768px) {
     .main {
       display: block;
