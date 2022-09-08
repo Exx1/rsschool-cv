@@ -40,6 +40,9 @@ function testCycle(n) {
 ## Education
 **University:** Plekhanov Russian University of Economics, Marketing in trading activities
 
+## Courses
+**RS Schools Course:** «JavaScript/Front-end. Stage 0»
+
 ## Languages
 * Russian - Native
 * English - A2
